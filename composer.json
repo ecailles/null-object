@@ -1,0 +1,80 @@
+{
+    "name"             : "ecailles/null-object",
+    "description"      : "Null Object",
+    "version"          : "1.0.0",
+    "type"             : "library",
+    "keywords"         : [
+        "null",
+        "object"
+    ],
+    "homepage"         : "https://github.com/ecailles/null-object",
+    "license"          : "license",
+    "authors"          : [
+        {
+            "name"    : "Whizark",
+            "email"   : "contact@whizark.com",
+            "homepage": "http://whizark.com",
+            "role"    : "Developer"
+        }
+    ],
+    "support"          : {
+        "email" : "contact@whizark.com",
+        "issues": "https://github.com/ecailles/null-object/issues",
+        "wiki"  : "https://github.com/ecailles/null-object/wiki",
+        "source": "https://github.com/ecailles/null-object"
+    },
+    "require"          : {
+        "php": ">=5.5.0"
+    },
+    "require-dev"      : {
+        "squizlabs/php_codesniffer": "^2.5.0",
+        "phpunit/phpunit"          : "^4.8 || ^5.1",
+        "mockery/mockery"          : "^0.9.4",
+        "satooshi/php-coveralls"   : "^1.0.0",
+        "apigen/apigen"            : "^4.1.2"
+    },
+    "autoload"         : {
+        "psr-4": {
+            "Ecailles\\NullObject\\": "src/"
+        }
+    },
+    "autoload-dev"     : {
+        "psr-4": {
+            "Tests\\Ecailles\\NullObject\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable"    : true,
+    "scripts"          : {
+        "test"   : [
+            "phpcs --colors",
+            "phpunit --colors=always"
+        ],
+        "docs"   : [
+            "apigen generate -d api/"
+        ],
+        "test-ci": [
+            "phpcs --colors",
+            "phpunit --colors=always --verbose --coverage-clover build/logs/clover.xml"
+        ]
+    },
+    "archive"          : {
+        "exclude": [
+            ".gitattributes",
+            ".gitignore",
+            ".editorconfig",
+            "composer.json",
+            "phpcs.xml",
+            "phpunit.xml.dist",
+            ".coveralls.yml",
+            "tests/",
+            "apigen.neon",
+            ".travis.yml"
+        ]
+    },
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+source: [./src/]
+accessLevels: [public, protected]
+annotationGroups:
+baseUrl:
+googleCseId:
+googleAnalytics:
+debug: No
+deprecated: Yes
+download: No
+extensions: [php]
+exclude: []
+groups: auto
+charset: [UTF-8]
+main:
+internal: Yes
+php: Yes
+skipDocPath: []
+noSourceCode: No
+templateTheme: default
+title: NullObject API Documentation
+todo: No
+tree: Yes
+quiet: No

@@ -1,7 +1,6 @@
 {
     "name"             : "ecailles/null-object",
     "description"      : "Null Object",
-    "version"          : "1.0.0",
     "type"             : "library",
     "keywords"         : [
         "null",

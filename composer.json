@@ -7,7 +7,7 @@
         "object"
     ],
     "homepage"         : "https://github.com/ecailles/null-object",
-    "license"          : "license",
+    "license"          : "MIT",
     "authors"          : [
         {
             "name"    : "Whizark",

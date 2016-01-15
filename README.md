@@ -1,6 +1,7 @@
 # NullObject
 
-[![Packagist][packagist-image]][packagist-url]
+[![Latest Stable Version][stable-image]][stable-url]
+[![Latest Unstable Version][unstable-image]][unstable-url]
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
@@ -9,9 +10,11 @@
 ```sh
 composer require ecailles/null-object
 ```
+[stable-image]: https://poser.pugx.org/ecailles/null-object/v/stable
+[stable-url]: https://packagist.org/packages/ecailles/null-object
 
-[packagist-image]: https://img.shields.io/packagist/v/ecailles/null-object.svg
-[packagist-url]: https://packagist.org/packages/ecailles/null-object
+[unstable-image]: https://poser.pugx.org/ecailles/null-object/v/unstable
+[unstable-url]: https://packagist.org/packages/ecailles/null-object
 
 [travis-image]: https://travis-ci.org/ecailles/null-object.svg?branch=master
 [travis-url]: https://travis-ci.org/ecailles/null-object

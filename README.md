@@ -2,6 +2,7 @@
 
 [![Latest Stable Version][stable-image]][stable-url]
 [![Latest Unstable Version][unstable-image]][unstable-url]
+[![License][license-image]][license-url]
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
@@ -15,6 +16,9 @@ composer require ecailles/null-object
 
 [unstable-image]: https://poser.pugx.org/ecailles/null-object/v/unstable
 [unstable-url]: https://packagist.org/packages/ecailles/null-object
+
+[license-image]: https://poser.pugx.org/ecailles/null-object/license
+[license-url]: https://packagist.org/packages/ecailles/null-object
 
 [travis-image]: https://travis-ci.org/ecailles/null-object.svg?branch=master
 [travis-url]: https://travis-ci.org/ecailles/null-object

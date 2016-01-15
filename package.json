@@ -12,5 +12,5 @@
         "remark"     : "^3.2.0",
         "remark-lint": "^2.2.1"
     },
-    "private"        : false
+    "private"        : true
 }

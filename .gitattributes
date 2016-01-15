@@ -3,7 +3,10 @@
 .gitattributes export-ignore
 .gitignore export-ignore
 .editorconfig export-ignore
+package.json export-ignore
 composer.json export-ignore
+.remarkignore export-ignore
+.remarkrc export-ignore
 phpcs.xml export-ignore
 phpunit.xml.dist export-ignore
 .coveralls.yml export-ignore

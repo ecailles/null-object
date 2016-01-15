@@ -19,15 +19,20 @@ matrix:
 
 cache:
   directories:
+    - node_modules
     - $HOME/.composer/cache/files
 
 before_install:
+  - npm config set spin false
+  - npm install -g npm
   - composer self-update
 
 install:
+  - npm install
   - composer install --prefer-source
 
 script:
+  - npm run-script lint-ci
   - composer test-ci
 
 after_success:

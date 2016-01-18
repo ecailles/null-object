@@ -66,7 +66,7 @@
             "composer.json",
             ".remarkignore",
             ".remarkrc",
-            "phpcs.xml",
+            "phpcs.xml.dist",
             "phpunit.xml.dist",
             ".coveralls.yml",
             "tests/",

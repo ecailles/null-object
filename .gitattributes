@@ -7,7 +7,7 @@ package.json export-ignore
 composer.json export-ignore
 .remarkignore export-ignore
 .remarkrc export-ignore
-phpcs.xml export-ignore
+phpcs.xml.dist export-ignore
 phpunit.xml.dist export-ignore
 .coveralls.yml export-ignore
 tests/ export-ignore

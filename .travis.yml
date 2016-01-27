@@ -43,7 +43,7 @@ after_success:
     - APIGEN=false
     - if [ "$TRAVIS_PHP_VERSION" = '5.6' ] && [ "$TRAVIS_BRANCH" = 'master' ] && [ "$TRAVIS_PULL_REQUEST" = 'false' ]; then APIGEN=true; fi
     - if $APIGEN; then BUILD_PATH="$(pwd)"; fi
-    - if $APIGEN; then REPOSITORY=${REPOSITORY:-"https://${GH_TOKEN}@github.com/$TRAVIS_REPO_SLUG$.git"}; fi
+    - if $APIGEN; then REPOSITORY=${REPOSITORY:-"https://${GH_TOKEN}@github.com/$TRAVIS_REPO_SLUG.git"}; fi
     - if $APIGEN; then BRANCH=${BRANCH:-"gh-pages"}; fi
     - if $APIGEN; then APIGEN_BUILD_PATH=${APIGEN_BUILD_PATH:-"/tmp/apigen"}; fi
     - if $APIGEN; then GIT_AUTHOR_NAME=${GIT_AUTHOR_NAME:-"Travis CI"}; fi

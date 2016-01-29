@@ -26,7 +26,7 @@ class NullObject implements \ArrayAccess, \Countable, \Iterator, \JsonSerializab
     }
 
     /**
-     * Does nothing when invoking a inaccessible method in a static context.
+     * Does nothing when invoking an inaccessible method in a static context.
      *
      * @param string $name The name of the method being called.
      * @param mixed[] $arguments The arguments of the method being called.
@@ -49,7 +49,7 @@ class NullObject implements \ArrayAccess, \Countable, \Iterator, \JsonSerializab
     }
 
     /**
-     * Does nothing when invoking a inaccessible method in an object context.
+     * Does nothing when invoking an inaccessible method in an object context.
      *
      * @param string $name The name of the method being called.
      * @param mixed[] $arguments The arguments of the method being called.
@@ -62,7 +62,7 @@ class NullObject implements \ArrayAccess, \Countable, \Iterator, \JsonSerializab
     }
 
     /**
-     * Returns the value when reading data from a inaccessible property.
+     * Returns the value when reading data from an inaccessible property.
      *
      * @param string $name The property name.
      *
@@ -74,7 +74,7 @@ class NullObject implements \ArrayAccess, \Countable, \Iterator, \JsonSerializab
     }
 
     /**
-     * Does nothing when writing data to a inaccessible property.
+     * Does nothing when writing data to an inaccessible property.
      *
      * @param string $name The property name to set the value to.
      * @param mixed $value The value to set.

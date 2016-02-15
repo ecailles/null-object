@@ -39,6 +39,9 @@ script:
     - npm run-script lint-ci
     - composer test-ci
 
+after_script:
+    - vendor/bin/coveralls --verbose
+
 after_success:
     - APIGEN=false
     - if [ "$TRAVIS_PHP_VERSION" = '5.6' ] && [ "$TRAVIS_BRANCH" = 'master' ] && [ "$TRAVIS_PULL_REQUEST" = 'false' ]; then APIGEN=true; fi
@@ -57,9 +60,6 @@ after_success:
     - "if $APIGEN; then git commit -m 'docs: generate API documentation'; fi"
     - if $APIGEN; then git push origin "$BRANCH"; fi
     - if $APIGEN; then cd "$BUILD_PATH"; fi
-
-after_script:
-    - vendor/bin/coveralls --verbose
 
 notifications:
     email:

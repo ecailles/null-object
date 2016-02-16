@@ -5,8 +5,8 @@
         "url" : "https://github.com/ecailles/null-object.git"
     },
     "scripts"        : {
-        "lint"   : "remark -u remark-lint **/*.md",
-        "lint-ci": "remark -f -u remark-lint **/*.md"
+        "lint"   : "remark **/*.md",
+        "lint-ci": "remark -f **/*.md"
     },
     "devDependencies": {
         "remark"     : "^4.0.0",

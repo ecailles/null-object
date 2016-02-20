@@ -40,10 +40,8 @@ script:
     - npm run-script lint-ci
     - composer test-ci
 
-after_script:
-    - vendor/bin/coveralls --verbose
-
 after_success:
+    - vendor/bin/coveralls --verbose
     - |
         if [ "$TRAVIS_PHP_VERSION" = '5.6' ] && [ "$TRAVIS_BRANCH" = 'master' ] && [ "$TRAVIS_PULL_REQUEST" = 'false' ]; then
             BUILD_PATH="$(pwd)"

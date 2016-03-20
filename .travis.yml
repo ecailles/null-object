@@ -56,9 +56,9 @@ after_success:
             git config user.name "$GIT_AUTHOR_NAME"
             git config user.email "$GIT_AUTHOR_EMAIL"
             git add -A
-            if $APIGEN; then git commit -m 'docs: generate API documentation'; fi
-            if $APIGEN; then git push origin "$BRANCH"; fi
-            if $APIGEN; then cd "$BUILD_PATH"; fi
+            git commit -m 'docs: generate API documentation'
+            git push origin "$BRANCH"
+            cd "$BUILD_PATH"
         fi
 
 notifications:

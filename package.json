@@ -9,7 +9,7 @@
         "lint-ci": "remark -f **/*.md"
     },
     "devDependencies": {
-        "remark"     : "^4.2.2",
+        "remark-cli" : "^1.0.0",
         "remark-lint": "^4.0.0"
     },
     "private"        : true

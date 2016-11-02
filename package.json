@@ -10,7 +10,7 @@
     },
     "devDependencies": {
         "remark-cli"            : "~2.1.0",
-        "remark-lint"           : "~5.1.0",
+        "remark-lint"           : "~5.2.0",
         "@whizark/remark-preset": "~0.2.0"
     },
     "private"        : true

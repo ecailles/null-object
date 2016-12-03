@@ -60,7 +60,7 @@ after_success:
                 APIGEN_BUILD_PATH=${APIGEN_BUILD_PATH:-"/tmp/apigen"}
                 GIT_AUTHOR_NAME=${GIT_AUTHOR_NAME:-"Travis CI"}
                 GIT_AUTHOR_EMAIL=${GIT_AUTHOR_EMAIL:-"travis@travis-ci.org"}
-                git clone --branch "$BRANCH" --depth 1 "$REPOSITORY" "$APIGEN_BUILD_PATH"
+                git clone --quiet --branch "$BRANCH" --depth 1 "$REPOSITORY" "$APIGEN_BUILD_PATH" > /dev/null 2>&1
                 yes | vendor/bin/apigen generate -d "$APIGEN_BUILD_PATH"
                 cd "$APIGEN_BUILD_PATH" || exit 1
                 git config user.name "$GIT_AUTHOR_NAME"
@@ -68,7 +68,7 @@ after_success:
                 git add -A
                 git commit -m 'docs: generate API documentation'
                 if [ -n "$TRAVIS_TAG" ]; then git tag -a "$TAG" -m "$TAG_MESSAGE"; fi
-                git push origin "$BRANCH" --follow-tags
+                git push --quiet --follow-tags origin "$BRANCH" > /dev/null 2>&1
                 cd "$BUILD_PATH"
             fi
         fi
